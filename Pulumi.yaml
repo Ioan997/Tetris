@@ -1,0 +1,11 @@
+name: tera-tetris
+description: Tera Tetris static website on AWS S3 + CloudFront
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
