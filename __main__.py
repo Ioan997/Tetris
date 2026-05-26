@@ -7,7 +7,7 @@ import pulumi_aws as aws
 # ---------------------------------------------------------------------------
 # S3 bucket (private — content served exclusively through CloudFront)
 # ---------------------------------------------------------------------------
-bucket = aws.s3.BucketV2("tera-tetris-bucket")
+bucket = aws.s3.Bucket("tera-tetris-bucket")
 
 # Block all public access at the bucket level
 bucket_public_access_block = aws.s3.BucketPublicAccessBlock(
